@@ -1,0 +1,34 @@
+.clients {
+  display: flex;
+}
+.logo-clients {
+  box-sizing: border-box;
+  height: 90px;
+  width: calc((100% - 150px) / 6);
+  &:not(:last-child) {
+    margin-right: 30px;
+    margin-left: auto;
+  }
+}
+.a-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  color: $social-links-color;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  transition: color 250ms $timing-function, border-color 250ms $timing-function;
+  &:hover {
+    color: $hover-focus-color;
+    border-color: $hover-focus-color;
+  }
+  &:focus {
+    color: $hover-focus-color;
+    border-color: $hover-focus-color;
+  }
+}
+.hover-svg {
+  fill: currentColor;
+}

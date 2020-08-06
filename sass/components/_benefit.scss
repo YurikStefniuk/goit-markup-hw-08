@@ -1,0 +1,39 @@
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+// .container {
+//   width: 1200px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
+.first-section-name {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+.main-info {
+  display: flex;
+}
+.item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $main-site-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.main-logo-description:not(:last-child) {
+  margin-right: 30px;
+}
+.logotip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $back-color;
+}

@@ -1,0 +1,109 @@
+.footer {
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 45px;
+  padding-bottom: 28px;
+  background-color: $footer-color;
+}
+.footer-div {
+  display: flex;
+}
+.main-link-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: $hover-focus-color;
+  text-decoration: none;
+}
+.main-link-footer-color {
+  color: $text-color;
+}
+.footer-addres {
+  display: block;
+  width: calc((50% - 45px) / 2);
+}
+.address {
+  color: $text-color;
+  font-style: normal;
+}
+.footer-list {
+  align-items: center;
+}
+.footer-link {
+  color: $text-color;
+  text-decoration: none;
+  &:hover {
+    color: $hover-focus-color;
+    &:focus {
+      color: $hover-focus-color;
+    }
+  }
+}
+.phone-mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $background-color;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+}
+// Join
+.join-div {
+  display: block;
+  width: calc((50% - 45px) / 2);
+}
+.footer-text {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.87;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+// Social-links-footer
+.social-links-footer {
+  color: $text-color;
+  fill: currentColor;
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: background-color 250ms $timing-function;
+}
+// share-and-form-footer
+.share-div {
+  width: calc((50%) / 2);
+}
+.form-join {
+  background-color: $footer-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.form-footer {
+  display: flex;
+}
+.input-footer {
+  background-color: $footer-color;
+  min-width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.telegram-send {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

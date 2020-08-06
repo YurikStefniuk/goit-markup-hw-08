@@ -1,0 +1,86 @@
+// Main-logo
+.main-link-color {
+  color: $main-site-color;
+}
+.main-link-header {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: $hover-focus-color;
+  text-decoration: none;
+}
+// Navigation Links header
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+  color: $main-site-color;
+  &:hover {
+    color: $hover-focus-color;
+  }
+  &:focus {
+    color: $hover-focus-color;
+  }
+}
+.link-nav {
+  position: relative;
+  font-weight: 500;
+}
+.link-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: $hover-focus-color;
+  opacity: 0;
+  transition: opacity 250ms $timing-function;
+}
+.link-nav:hover::after {
+  opacity: 1;
+}
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 12px;
+}
+// Mail-Phone
+.phone-mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $background-color;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+}
+.link-phone-mail:not(:last-child) {
+  margin-right: 50px;
+}
+.button-icon {
+  fill: currentColor;
+  margin-left: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

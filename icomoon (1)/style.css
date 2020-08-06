@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-facebook {
+  width: 0.5498046875em;
+}
+
+.icon-twitter {
+  width: 1.111328125em;
+}
+
+.icon-clients1 {
+  width: 0.76953125em;
+}
+
+.icon-clients2 {
+  width: 0.953125em;
+}
+
+.icon-clients3 {
+  width: 1.8603515625em;
+}
+
+.icon-clients4 {
+  width: 1.2548828125em;
+}
+
+.icon-clients5 {
+  width: 1.9345703125em;
+}
+
+.icon-clients6 {
+  width: 0.900390625em;
+}
+
+.icon-mail {
+  width: 1.3330078125em;
+}
+
+.icon-main-logo1 {
+  width: 0.9423828125em;
+}
+
+.icon-main-logo2 {
+  width: 0.9716796875em;
+}
+
+.icon-main-logo3 {
+  width: 1.2958984375em;
+}
+
+.icon-phone-logo {
+  width: 0.6669921875em;
+}

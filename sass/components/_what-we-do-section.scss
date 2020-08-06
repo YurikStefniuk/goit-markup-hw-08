@@ -1,0 +1,32 @@
+.what-are-we-doing {
+  display: flex;
+}
+.li-what-are-we-doing {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.img-do {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+.specialization-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 27px;
+  color: $text-color;
+  line-height: 1.14;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+}
