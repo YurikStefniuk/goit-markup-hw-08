@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -23,35 +23,59 @@
           >Web
           <span class="main-link-color">Studio</span>
         </a>
-        <ul class="site-nav">
-          <li class="item">
-            <a href="/index.html" class="link link-nav">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link link-nav">Портфолио</a>
-          </li>
-          <li class="item">
-            <a href="/" class="link link-nav">Контакты</a>
-          </li>
-        </ul>
-        <ul class="auth-nav">
-          <li class="item">
-            <a href=" mailto:info@devstudio.com" class="link phone-mail mail">
-              <svg class="button-icon" width="16" height="12">
-                <use href="./icons/symbol-defs2.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="link phone-mail phone">
-              <svg class="button-icon" width="16" height="12">
-                <use href="./icons/symbol-defs2.svg#icon-phone-logo"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="24"
+            height="16"
+            aria-label="Переключатель-мобильного-меню"
+          >
+            <use
+              href="./icons/symbol-defs2.svg#icon-menu_24px"
+              class="icon-close-mobile"
+            ></use>
+            <use
+              href="./icons/symbol-defs2.svg#icon-close_24px"
+              class="icon-menu-mobile"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav">
+            <li class="item">
+              <a href="/index.html" class="link link-nav">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link link-nav">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="/" class="link link-nav">Контакты</a>
+            </li>
+          </ul>
+          <ul class="auth-nav">
+            <li class="item">
+              <a href=" mailto:info@devstudio.com" class="link phone-mail mail">
+                <svg class="button-icon" width="16" height="12">
+                  <use href="./icons/symbol-defs2.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="link phone-mail phone">
+                <svg class="button-icon" width="16" height="12">
+                  <use href="./icons/symbol-defs2.svg#icon-phone-logo"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- радиокнопки -->
@@ -83,7 +107,14 @@
         <li class="each-block-portfolio">
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
-              <img src="./portfolio-img/технокряк.jpg" alt="технокряк" />
+              <img
+                srcset="
+                  ./adaptive-img/portfolio-first.jpg,
+                  ./adaptive-img/portfolio-first2x.jpg
+                "
+                src="./adaptive-img/portfolio-first.jpg"
+                alt="технокряк"
+              />
               <div class="card-overlay">
                 <p class="img-description">
                   Технокряк это современная площадка распространения
@@ -102,7 +133,11 @@
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
               <img
-                src="./portfolio-img/new-orlean-vs-golden-star-zip.jpg"
+                srcset="
+                  ./adaptive-img/portfolio1.jpg,
+                  ./adaptive-img/portfolio1-2x.jpg
+                "
+                src="./adaptive-img/portfolio1.jpg"
                 alt="new-orlean-vs-golden-star"
               />
               <div class="card-overlay">
@@ -122,7 +157,14 @@
         <li class="each-block-portfolio">
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
-              <img src="./portfolio-img/seafood-zip.jpg" alt="Sea Food" />
+              <img
+                srcset="
+                  ./adaptive-img/portfolio2.jpg,
+                  ./adaptive-img/portfolio2-2x.jpg
+                "
+                src="./adaptive-img/portfolio2.jpg"
+                alt="Sea Food"
+              />
               <div class="card-overlay">
                 <p class="img-description">
                   Технокряк это современная площадка распространения
@@ -140,7 +182,14 @@
         <li class="each-block-portfolio">
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
-              <img src="./portfolio-img/prime-zip.jpg" alt="Prime" />
+              <img
+                srcset="
+                  ./adaptive-img/portfolio3.jpg,
+                  ./adaptive-img/portfolio3-2x.jpg
+                "
+                src="./adaptive-img/portfolio3.jpg"
+                alt="Prime"
+              />
               <div class="card-overlay">
                 <p class="img-description">
                   Технокряк это современная площадка распространения
@@ -158,7 +207,14 @@
         <li class="each-block-portfolio">
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
-              <img src="./portfolio-img/boxes-zip.jpg" alt="Boxes" />
+              <img
+                srcset="
+                  ./adaptive-img/portfolio4.jpg,
+                  ./adaptive-img/portfolio4-2x.jpg
+                "
+                src="./adaptive-img/portfolio4.jpg"
+                alt="Boxes"
+              />
               <div class="card-overlay">
                 <p class="img-description">
                   Технокряк это современная площадка распространения
@@ -177,7 +233,11 @@
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
               <img
-                src="./portfolio-img/inspiration-has-no-border-zip.jpg"
+                srcset="
+                  ./adaptive-img/portfolio5.jpg,
+                  ./adaptive-img/portfolio5-2x.jpg
+                "
+                src="./adaptive-img/portfolio5.jpg"
                 alt="Inspiration Has No Border"
               />
               <div class="card-overlay">
@@ -198,7 +258,11 @@
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
               <img
-                src="./portfolio-img/limited-edition-zip.jpg"
+                srcset="
+                  ./adaptive-img/portfolio6.jpg,
+                  ./adaptive-img/portfolio6-2x.jpg
+                "
+                src="./adaptive-img/portfolio6.jpg"
                 alt="Limited edition books picture"
               />
               <div class="card-overlay">
@@ -218,7 +282,14 @@
         <li class="each-block-portfolio">
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
-              <img src="./portfolio-img/lab-zip.jpg" alt="Project LAB" />
+              <img
+                srcset="
+                  ./adaptive-img/portfolio7.jpg,
+                  ./adaptive-img/portfolio7-2x.jpg
+                "
+                src="./adaptive-img/portfolio7.jpg"
+                alt="Project LAB"
+              />
               <div class="card-overlay">
                 <p class="img-description">
                   Технокряк это современная площадка распространения
@@ -237,7 +308,11 @@
           <a href="/" class="link link-portfolio">
             <div class="photo-card">
               <img
-                src="./portfolio-img/businnes-zip.jpg"
+                srcset="
+                  ./adaptive-img/portfolio8.jpg,
+                  ./adaptive-img/portfolio8-2x.jpg
+                "
+                src="./adaptive-img/portfolio8.jpg"
                 alt="Growing Businnes"
               />
               <div class="card-overlay">
@@ -265,14 +340,12 @@
             <span class="main-link-footer-color">Studio</span>
           </a>
           <address class="address">
-            г. Киев, <br />
-            Бульвар Леси Украинки, д. 26, <br />
-            4й этаж офис 427
-            <ul class="footer-list">
-              <li><a href="" class="link phone-mail">info@example.com</a></li>
-              <li><a href="" class="link phone-mail">+38 099 111 11 11</a></li>
-            </ul>
+            г. Киев, Бульвар Леси Украинки,26
           </address>
+          <ul class="footer-list">
+            <li><a href="" class="link phone-mail">info@example.com</a></li>
+            <li><a href="" class="link phone-mail">+38 099 111 11 11</a></li>
+          </ul>
         </div>
         <div class="join-div">
           <p class="footer-text">Присоединяйтесь</p>
@@ -316,13 +389,22 @@
                 type="email"
                 name="mail"
                 id="mail"
-                placeholder="email"
+                placeholder="E-mail"
               />
             </div>
-            <button type="submit" class="btn-decoration">Подписывайся</button>
+            <button type="submit" class="btn-decoration">
+              Подписывайся
+              <svg class="telegram-send">
+                <use
+                  width:20;
+                  href="./icons/symbols-defs2.svg#icon-telegram"
+                ></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,29 +1,83 @@
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  // display: flex;
+  // max-width: 1600px;
+  // margin-left: auto;
+  // margin-right: auto;
   align-items: center;
-  display: flex;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../img/Header-img-zip.jpg);
+  @media screen and (max-width: 767px) {
+    background-size: 480px 400px;
+    max-width: 480px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../adaptive-img/Header-mobile.jpg");
+  }
+  @media screen and (max-width: 767px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../adaptive-img/Header-mobile2x.jpg");
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-size: 768px 400px;
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../adaptive-img/Header-tablet.jpg");
+  }
+  @media screen and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../adaptive-img/Header-tablet@2x.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 1600px 600px;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../adaptive-img/Header-laptop.jpg");
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 1600px 600px;
+    max-width: 1600px;
+    height: 600px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../adaptive-img/Header-laptop2x.jpg");
+    }
+  }
 }
 .hero-title {
   font-family: Roboto;
@@ -35,6 +89,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $text-color;
+  @media screen and(max-width:767px) {
+    font-size: 24px;
+  }
 }
 .order-button {
   font-weight: 700;

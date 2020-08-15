@@ -22,16 +22,21 @@ a {
   color: $main-site-color;
 }
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  @media screen and(max-width:480px) {
+    width: 480px;
+  }
+  @media screen and(min-width:768px) {
+    width: 768px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 1280px;
+  }
 }
-// .section {
-//   padding-bottom: 94px;
-//   padding-top: 94px;
-// }
 .section-title {
   font-family: Roboto;
   font-weight: 700;
@@ -40,5 +45,23 @@ a {
   text-align: center;
   color: $main-site-color;
   margin-bottom: 50px;
+}
+.section {
+  padding-bottom: 94px;
   padding-top: 94px;
 }
+.flex {
+  display: flex;
+}
+// .adaptive {
+//   @media screen and(max-width:480px) {
+//     width: 480px;
+//   }
+//   @media screen and(max-width:768px) {
+//     widows: 768px; ;
+//   }
+//   @media screen and(max-width:1280px) {
+//     width: 1280px;
+
+//   }
+// }
